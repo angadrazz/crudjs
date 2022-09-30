@@ -117,3 +117,6 @@ let sum = function(a, b) {
 // expected output:
 // "a: somestring"
 // "b: 42"
+
+
+console.log("Hello world!");
