@@ -89,3 +89,22 @@ function upload(url){
   }
   
   findUser('john', console.log);
+
+  const execFn = (resolve, reject) => {
+    let action = "wash clothes";
+    if(!action){
+    resolve("Success")
+    } else {
+    reject("Failure")
+    }
+    }
+    
+    
+    
+    const myPromise = new Promise(execFn);
+    
+    myPromise.then((message)=> {
+    console.log("Dry the clothes", message)
+    }).catch((message)=>{
+    console.log("Wash again", message);
+    })
